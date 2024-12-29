@@ -38,7 +38,7 @@ To view mail go to [localhost:8025](http://localhost:8025) when the containers a
 
 ## Helper Script
 
-This project includes an `ops.sh` script that serves as a helper for accessing tools in docker. This is an idea that I borrowed from Chris Fidao and his [Shipping Docker](https://serversforhackers.com/shipping-docker) course.  To make best use of it, you will need to set up a bash alias:
+This project includes an `ops.sh` script that serves as a helper for accessing tools in docker. This is an idea that I borrowed from Chris Fidao and his [Shipping Docker](https://serversforhackers.com/shipping-docker) course. To make best use of it, you will need to set up a bash alias:
 
 ```sh
 app() {
