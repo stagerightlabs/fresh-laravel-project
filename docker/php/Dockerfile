@@ -11,10 +11,10 @@ RUN deluser www-data && \
 
 # Install Alpine packages
 RUN apk add --no-cache --virtual build-deps autoconf g++ libtool make linux-headers && \
-    apk add --no-cache git libzip-dev
+    apk add --no-cache git libzip-dev postgresql-dev
 
 # Install PHP Extensions
-RUN docker-php-ext-install zip
+RUN docker-php-ext-install pdo pdo_pgsql pgsql zip
 
 # Increase the default memory limit
 RUN echo 'memory_limit = 1096M' >> /usr/local/etc/php/conf.d/docker-php-memlimit.ini;
