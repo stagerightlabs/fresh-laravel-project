@@ -1,0 +1,31 @@
+services:
+    php:
+        build:
+            context: docker/php
+        volumes:
+            - ./:/var/www/:cached
+        ports:
+            - 80:8000
+
+    postgres:
+        build:
+            context: docker/postgres
+        ports:
+            - "54320:5432"
+        environment:
+            - EDITOR=vim
+            - POSTGRES_PASSWORD=secret
+        volumes:
+            - pg-data:/var/lib/postgresql/data
+            - ./docker/postgres/share:/var/lib/postgresql/share
+
+    node:
+        build:
+            context: docker/node
+        volumes:
+            - ./:/var/www:cached
+        ports:
+            - 5173:5173
+
+volumes:
+    pg-data:
