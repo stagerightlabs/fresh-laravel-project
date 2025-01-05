@@ -6,9 +6,11 @@ This is my own preferred way to start a fresh Laravel project. It leverages some
 
 ## Stack
 
-- PHP 8.4
-- PostgreSQL
-- Docker
+- [PHP 8.4](https://www.php.net/)
+- [Laravel 11](https://laravel.com/)
+- [Tailwind 3.4](https://tailwindcss.com/)
+- [Node 22](https://nodejs.org/)
+- [PostgreSQL 17](https://www.postgresql.org/)
 
 ## Features
 
