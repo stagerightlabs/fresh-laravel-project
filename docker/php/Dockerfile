@@ -35,6 +35,10 @@ COPY xdebug.ini /usr/local/etc/php/conf.d
 # Clean up apk dependencies
 RUN apk del build-deps
 
+# Copy utility scripts into the container
+COPY watch.php /usr/local/bin/
+COPY start.sh /usr/local/bin/
+
 # Set the active user
 USER ${NAME}
 
@@ -42,4 +46,4 @@ USER ${NAME}
 WORKDIR /var/www
 
 # Serve the web application through the PHP dev server
-CMD ["php", "artisan", "serve", "--host", "0.0.0.0"]
+CMD ["/usr/local/bin/start.sh"]
