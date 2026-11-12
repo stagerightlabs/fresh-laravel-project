@@ -1,4 +1,4 @@
-FROM postgres:17
+FROM postgres:18
 
 LABEL authors="Ryan Durham <ryan@stagerightlabs.com>"
 
