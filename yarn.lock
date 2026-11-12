@@ -207,6 +207,16 @@
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
+"@prettier/html-tags@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@prettier/html-tags/-/html-tags-2.2.0.tgz#a8a98047856272dd6309831d0edd6966592acce8"
+  integrity sha512-6qLjt8ncestmSfEOeVf/kX5VhkinUsppybvkwn1X7wu+BjQ/GBSZYu7cytxdCvi5BaljCGIAr4rmfL5zVqdgyQ==
+
+"@prettier/parse-srcset@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@prettier/parse-srcset/-/parse-srcset-3.1.0.tgz#10a6785b84812b5ec506c16812fc2e3c6bb10b9e"
+  integrity sha512-FIRv2rZotO9NP/r66taYqD1zICpPiBbrECqjKV/xqNotqDxF7fLzzUeK+1RSRx9Tenk0DajR/GcRmTJ2qtHaKQ==
+
 "@rollup/rollup-android-arm-eabi@4.68.2":
   version "4.68.2"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-android-arm-eabi/-/rollup-android-arm-eabi-4.68.2.tgz#c1452d844a6a421b09cbcf36b0eabecc36795cd9"
@@ -717,6 +727,11 @@ hasown@^2.0.2:
   dependencies:
     function-bind "^1.1.2"
 
+html-element-attributes@^3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/html-element-attributes/-/html-element-attributes-3.5.0.tgz#355a3890005201031046b79a55c9b04f696bb135"
+  integrity sha512-rU2BFhp0kQla9sqPBI46C+zbP6PFOtD7z6XNAJ6as+cGecCDXLx0W3aIs6XdPLmBBG/Fy1meRi/n65Exofz4Qw==
+
 is-binary-path@~2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/is-binary-path/-/is-binary-path-2.1.0.tgz#ea1f7f3b80f064236e83470f86c09c254fb45b09"
@@ -986,10 +1001,14 @@ postcss@^8.5.3:
     picocolors "^1.1.1"
     source-map-js "^1.2.2"
 
-prettier-plugin-blade@^2.1.19:
-  version "2.1.19"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-blade/-/prettier-plugin-blade-2.1.19.tgz#9c2105a9bed08b20a39bab8c54d5fbf725a54d91"
-  integrity sha512-bLOrrZmWYZe9IN0EkMUESgOLExCKGJYOgUr+ZOxaOujUK0rirxTPiUYI4wnDZZfX2sI9MHaHCeKTlRnNmiRhAQ==
+prettier-plugin-blade@^3.3.3:
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-blade/-/prettier-plugin-blade-3.3.3.tgz#c53b6e720174f2d192c63742422a3fe86115e7c1"
+  integrity sha512-ZjilA3czAFLSdGjM/F+T8jlXv20vSI7zb6ZqfVp3vX/+313mFZspuPz2DHN26xemjgOfW5mnyuOXjBvY399gsA==
+  dependencies:
+    "@prettier/html-tags" "^2.2.0"
+    "@prettier/parse-srcset" "^3.1.0"
+    html-element-attributes "^3.5.0"
 
 prettier-plugin-tailwindcss@^0.6.9:
   version "0.6.9"
